@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head >
+
+<body>
+    <div class="triangle-up"></div>
+    <div class="modal-header">
+        <div class="logo">
+            <img src="img/panos_for_rounding.png" alt="Panos Logo" class="logo-icon">
+            <div>
+                <h2>Panos</h2>
+                <span class="motto">
+                    <p>A bird that understands you.</p>
+                </span>
+            </div>
+        </div>
+    
+        <div class="modal-content">
+            <iframe id="votd" framespacing="0" frameborder="no" src="https://www.biblegateway.com/votd/get/?format=html&version=KJV">View Verse of the Day</iframe>
+        
+            <select class="form-select" id="bible">
+                <option value="0" selected>King James Version (KJV)</option>
+                <option value="1">New International Version (NIV)</option>
+                <option value="2">New American Bible Revised Edition (NABRE)</option>
+                <option value="3">Chinese New Version Simplified (CNVS)</option>
+                <option value="4">Chinese New Version Traditional (CNVT)</option>
+                <option value="5">Conferenza Episcopale Italiana (CEI)</option>
+                <option value="6">Japanese Living Bible (JLB)</option>
+                <option value="7">Korean Living Bible (KLB)</option>
+                <option value="8">Hindi Bible: Easy-to-Read Version (ERV-HI)</option>
+                <option value="9">La Biblia de las Américas (LBLA)</option>
+                <option value="10">Reina-Valera 1960 (RVR1960)</option>
+                <option value="11">Magandang Balita Biblia (MBBTAG)</option>
+                <option value="12">Russian Synodal Version (RUSV)</option>
+                <option value="13">Segond 21 (SG21)</option>
+                <option value="14">Schlacter 2000 (SCH2000)</option>
+                <option value="15">Stephanus New Testament (TR1550)</option>
+                <option value="16">Vietnamese Bible: Easy-to-Read Version (BPT)</option>
+            </select>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex">
+                <button type="button" id="saveButton">Save Verse</button>
+                <button type="button" id="viewButton">View Saved Verses</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    min-height: 180px;
+    padding: 0;
+    width: 364px;
+}
+
+h2 {
+    font-family: 'Monaco', monospace;
+    font-size: 22px;
+    font-weight: 400;
+    color:white;
+}
+
+/* pop-up speech bubble */
+.modal-header {
+    align-items: center;
+    border: 0.5px solid #C0C0C0;
+    border-radius: 8px;
+}
+
+.triangle-up {
+    position: relative;
+    left: 345px;
+	width: 0;
+    height: 0;
+	border-left: 6px solid transparent !important;
+	border-right: 6px solid transparent !important;
+    border-bottom: 11px solid #c0c0c0 !important;
+} 
+
+.modal-header::after {
+    content:"";
+    position: absolute;
+    top:2px;
+    left: 346px;
+	width: 0;
+    height: 0;
+	border-left: 5px solid transparent !important;
+	border-right: 5px solid transparent !important;
+    border-bottom: 10px solid #E51B23 !important;
+}
+
+/* modal content */
+.modal-content {
+    padding: 10px 22px;
+}
+
+.form-select {
+    margin: 10px 0px;
+}
+
+/* logo and logo header */
+.logo {
+    display: flex;
+    padding: 0px 15px;
+    background-color: #E51B23;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.logo-icon {
+    width: 22%;
+    border-radius: 50%;
+    margin: 10px 15px 8px 10px;
+}
+
+/* motto */
+.motto {
+    color: whitesmoke;
+    font-size: 12px;
+    position: relative;
+    bottom: 15px;
+}
+
+.flex-container { 
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 22px 10px 22px;
+}
